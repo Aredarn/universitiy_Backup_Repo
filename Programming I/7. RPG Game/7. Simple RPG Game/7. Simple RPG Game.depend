@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1636048047 source:e:\programos\unfinished\c university\7. rpg game\7. simple rpg game\main.c
+	<conio.h>
+	<time.h>
+	<stdio.h>
+	<unistd.h>
+	<stdlib.h>
+	<stdbool.h>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        t = new Array("red");
+
+        function felvesz()
+        {
+            t.push(document.getElementById("szin").value);
+        }
+
+        function kirajzol()
+        {
+            if(document.getElementById("sikidom").value == "kor")
+            {
+                r = prompt("Kérem a sugarat!");
+                rand =Math.floor(Math.random()*t.lenght);
+                str = "<svg><circle cx=100 cy=100  r="+r+" fill="+t[rand]+"></svg>";
+                document.getElementById("ide").innerHTML = str;
+            }
+            else(document.getElementById("sikidom").value == "teglalap")
+            {
+                r = prompt("Kérem a szélességét!");
+                s = prompt("Kérem a magasságát");
+                rand =Math.floor(Math.random()*t.lenght);
+                
+                str = "<svg> <rect width="+r +" height="+s +" fill="+t[rand]+"></svg>";
+                document.getElementById("ide").innerHTML = str;
+
+            }
+        }
+
+    </script>
+
+
+</head>
+<body>
+    
+    <input type="text" id="szin"><br>
+    <button onclick="felvesz()">Hozzáad</button>
+
+    <br><br>
+    <p>Válassz egy síkidomot</p>
+    <select id="sikidom">
+        <option value="kor">Kör</option>
+        <option value="teglalap">TéglaLap</option>
+    </select>
+    <button onclick="kirajzol()">Kirajzol</button>
+
+    <p id="ide">.</p>
+
+</body>
+</html>

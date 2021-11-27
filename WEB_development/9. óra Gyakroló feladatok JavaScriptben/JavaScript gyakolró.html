@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        
+
+        function onClickList()
+        {
+            var firstNum = document.getElementById("number").value;
+            var secondNum = document.getElementById("number2").value;
+            var i;
+            var str="";
+            if(document.getElementById("odd").checked==true)
+            {
+                for(i = firstNum;i<secondNum;i++)
+                {
+                    if(i%2==0)
+                       { str +=  "<option>" + i +"</option>";
+                    }
+                }
+            }
+            else if(document.getElementById("even").checked=true)
+            {
+
+                for(i = firstNum;i<secondNum;i++)
+                {
+                    if(i%2==1)
+                    str +=  "<option>" +i +"</option>";
+                }
+            }
+            else{
+
+            }
+
+            document.getElementById("Nums").innerHTML =str;
+        }
+
+
+        function csereFoto()
+        {
+            var firstPhoto = document.getElementById("firstPic").src;
+            var secondPic = document.getElementById("secoundPic").src;
+
+            var temp = firstPhoto;
+
+            document.getElementById("firstPic").src = secondPic;
+            document.getElementById("secoundPic").src = temp;
+
+
+        }
+        
+
+        
+    </script>
+
+
+</head>
+<body>
+    <!--|||||||||||||||||ELSŐ FELADAT||||||||||||||||||-->
+    <h3>Első feladat</h3>
+
+    <input type="radio" id="odd" name="oddeven">
+    <label for="odd">Páros</label>
+    <input type="radio" id="even" name="oddeven">
+    <label for="even">Páratlan</label>
+    <br>
+    <input type="number" id="number">
+    <br>
+    <input type="number" id="number2">
+
+
+    <br>
+    <select id="Nums" onclick="onClickList()"></select>
+
+    <!--\\\\\\\\\\\\\\MÁSODIK FELADAT////////////////////-->
+    <h3>Második Feladat</h3>
+
+    <img style="margin-left:40%; max-width: 250px;" src="https://api-motor.suzuki.hu/files/SUZUKI-GSX-S1000GT-Action.jpg" id="firstPic">
+    <img style="margin-left:40%; max-width: 250px;" src="https://cdn.visordown.com/field/image/GSX-S1000GT_M2_Action_17-QT8.jpg" id="secoundPic">
+    <br>
+    <button style="margin-left:40%;"id="csere" onclick="csereFoto()">Csere!</button>
+
+</body>
+</html>

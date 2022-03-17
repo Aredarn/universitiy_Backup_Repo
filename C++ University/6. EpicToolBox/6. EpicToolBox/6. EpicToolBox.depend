@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1646429972 source:d:\programos\unfinished\c++ university\6. epictoolbox\6. epictoolbox\main.cpp
+	<iostream>
+	<EpicToolBox.h>
+
+1646429728 source:d:\programos\unfinished\c++ university\6. epictoolbox\6. epictoolbox\src\epictoolbox.cpp
+	"EpicToolBox.h"
+	<iostream>
+
+1646429860 d:\programos\unfinished\c++ university\6. epictoolbox\6. epictoolbox\include\epictoolbox.h
+

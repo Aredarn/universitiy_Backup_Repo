@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1647508758 source:d:\programos\unfinished\c++ university\8\8. gyak\main.cpp
+	<iostream>
+	"szemely.h"
+	"hallgato.h"
+
+1647509352 d:\programos\unfinished\c++ university\8\8. gyak\szemely.h
+	<string>
+
+1647509792 source:d:\programos\unfinished\c++ university\8\8. gyak\szemely.cpp
+	"szemely.h"
+	<iostream>
+
+1647509697 d:\programos\unfinished\c++ university\8\8. gyak\hallgato.h
+	"szemely.h"
+
+1647509471 source:d:\programos\unfinished\c++ university\8\8. gyak\hallgato.cpp
+	"Hallgato.h"
+	"szemely.h"
+

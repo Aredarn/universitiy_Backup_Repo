@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1647800681 source:d:\programos\unfinished\c++ university\9. önálló feladat\önálló\src\szamsor.cpp
+	"szamsor.h"
+
+1647800671 d:\programos\unfinished\c++ university\9. önálló feladat\önálló\include\szamsor.h
+
+1647800718 source:d:\programos\unfinished\c++ university\9. önálló feladat\önálló\src\szemely.cpp
+	"szemely.h"
+	<iostream>
+
+1647800708 d:\programos\unfinished\c++ university\9. önálló feladat\önálló\include\szemely.h
+	<string>
+

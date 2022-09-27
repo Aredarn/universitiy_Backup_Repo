@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigyóóó</title>
+</head>
+<body>
+    
+    <canvas id="mainGame" width="100" height="100" style="border-style:solid;">    </canvas>
+
+    <p id="score">...</p>
+
+    <script>
+        var canvas = document.getElementById("mainGame");
+        var snake = canvas.getContext("2d");
+        var apple = canvas.getContext("2d");
+
+        var x = canvas.width/2;
+        var y = canvas.height-40;
+
+        var dx = 0;
+        var dy = -1;
+
+        var ax,ay;
+
+        var score = 0;
+
+
+        var notEaten = false;
+
+        window.addEventListener('keydown',this.check,false);
+        function check(e) {
+            var code = e.keyCode;
+            switch (code) {
+                case 37: console.log("Left"); 
+                        dx = -1; dy = 0;
+                        break; //Left key
+                case 38: console.log("Up"); 
+                        dx = 0; dy = -1;
+                        break; //Up key
+                case 39: console.log("Right"); 
+                        dx = 1; dy = 0;
+                        break; //Right key
+                case 40: console.log("Down"); 
+                        dx = 0; dy = 1;
+                        break; //Down key
+                default:
+                        console.log(x);
+                        console.log(y);//Everything else
+                break;
+                
+             }
+        }
+
+        function drawSnake()
+        {
+            snake.beginPath();
+            snake.rect(x, y, 5, 5);
+            snake.fillStyle = "#0095DD";
+            snake.fill();
+            snake.closePath;
+        }
+
+        function draw()
+        {
+            snake.clearRect(x,y,5,5);
+            x += dx;
+            y += dy;
+            drawSnake();
+            
+            if((x<0 ||y<0) ||(x>100||y>100)){
+                window.alert("GAME OVER");
+            }
+
+            if(x==ax&&y==ay)
+            {
+                
+                score++;
+                notEaten=false;
+                
+            }
+            document.getElementById("score").innerHTML= "Score: " + score;
+
+        }
+
+        function randApple()
+        {
+            if(notEaten)
+            {
+
+            }
+            else
+            {
+                ax = Math.floor(Math.random() * 95) + 1;
+                ay = Math.floor(Math.random() * 95) + 1;
+                console.log(ax);
+                console.log(ay);
+                apple.beginPath();
+                apple.rect(ax, ay, 5, 5);
+                apple.fillStyle = "Red";
+                apple.fill();
+                console.log("alma");
+                notEaten = true;
+            }
+
+        }
+        
+        setInterval(draw, 60);
+        setInterval(randApple,0);
+        
+    </script>
+
+</body>
+</html>

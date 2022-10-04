@@ -1,0 +1,22 @@
+main() eleje!
+
+contains() teszt
+egy -> 1
+ket -> 0
+ha -> 0
+negy -> 1
+
+addUnique() teszt
+0 7 4 1 8 5 2 9 6 3 
+
+setObject() normal mukodes teszt
+fal
+
+setObject() exception teszt
+Eddig jo...
+Exception (standard): 168
+
+repeat() teszt
+16: 1010101010101010
+
+main() vege!

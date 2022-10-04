@@ -1,0 +1,17 @@
+1. feladat: //nincs kimenet
+
+
+2. feladat:
+ | 0
+2.5 | 1
+
+
+3. feladat:
+Kakszi Lajos | Degec Imre
+11 | 22
+
+
+4. feladat:
+Invalid field(s): second
+Invalid field(s): first second
+Invalid field(s): first

@@ -1,0 +1,6 @@
+Event name: NewEvent, description: null, day: 1200, hour: 0
+Event name: birthday, description: null, day: 1430, hour: 0
+Event name: buy food, description: null, day: 1700, hour: 0
+Event name: NewEvent, description: null, day: 1200, hour: 0
+Event name: birthday, description: null, day: 1430, hour: 0
+Event name: buy food, description: null, day: 1700, hour: 0

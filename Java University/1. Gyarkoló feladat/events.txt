@@ -4,3 +4,6 @@ Event name: buy food, description: null, day: 1700, hour: 0
 Event name: NewEvent, description: null, day: 1200, hour: 0
 Event name: birthday, description: null, day: 1430, hour: 0
 Event name: buy food, description: null, day: 1700, hour: 0
+Event name: Sanyika szulinapja, description: null, day: 31, hour: 0
+Event name: Petike szulinapja, description: null, day: 20, hour: 0
+Event name: fff, description: null, day: 5, hour: 0

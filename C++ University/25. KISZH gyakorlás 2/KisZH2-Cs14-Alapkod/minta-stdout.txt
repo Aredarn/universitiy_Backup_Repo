@@ -1,0 +1,85 @@
+1. feladat
+Sent a message to +36305027774
+Sent a message to +36204171469
+Don't send a message to yourself, it's just sad.
+Sent a message to +36701236914
+Sent a message to +36301133221
+
+Received a message from +36305027774
+Received a message from +36204171469
+Message from yourself. No.
+Received a message from +36701236914
+Received a message from +36301133221
+
+
+2. feladat
++36204171469 - 2021.10.25. 12:40:23 (<-)
+        Phasellus ullamcorper libero ac ligula porta, sit amet tempus leo tempus.
++36301133221 - 2021.10.24. 22:22:12 (->)
+        Vivamus sollicitudin neque et augue commodo, eu rhoncus felis fringilla.
++36305027774 - 2021.10.24. 12:45:11 (->)
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
++36204171469 - 2021.10.25. 12:40:23 (<-)
+        Phasellus ullamcorper libero ac ligula porta, sit amet tempus leo tempus.
++36301133221 - 2021.10.24. 22:22:12 (->)
+        Vivamus sollicitudin neque et augue commodo, eu rhoncus felis fringilla.
++36305027774 - 2021.10.24. 12:45:11 (->)
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
++36305027774 - 2021.10.24. 10:45:11 (<-)
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
++36701236914 - 2021.10.23. 15:12:56 (->)
+        Curabitur in maximus risus, cursus auctor orci. Sed a condimentum metus, et imperdiet orci.
+
++36204171469 - 2021.10.25. 12:40:23 (<-)
+        Phasellus ullamcorper libero ac ligula porta, sit amet tempus leo tempus.
++36301133221 - 2021.10.24. 22:22:12 (->)
+        Vivamus sollicitudin neque et augue commodo, eu rhoncus felis fringilla.
++36305027774 - 2021.10.24. 12:45:11 (->)
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
++36305027774 - 2021.10.24. 10:45:11 (<-)
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
++36701236914 - 2021.10.23. 15:12:56 (->)
+        Curabitur in maximus risus, cursus auctor orci. Sed a condimentum metus, et imperdiet orci.
++36204171469 - 2021.10.23. 11:34:05 (<-)
+        Vivamus ultrices sagittis risus, ac dignissim lectus dignissim aliquet.
++36204171469 - 2021.10.22. 10:34:05 (->)
+        Vivamus ultrices sagittis risus, ac dignissim lectus dignissim aliquet.
++36701236914 - 2021.10.21. 16:12:56 (<-)
+        Curabitur in maximus risus, cursus auctor orci. Sed a condimentum metus, et imperdiet orci.
+
+
+3. feladat
++36301133221 - 2021.10.20. 10:22:12 (<-)
+        Vivamus sollicitudin neque et augue commodo, eu rhoncus felis fringilla.
++36204171469 - 2021.10.22. 10:34:05 (->)
+        Vivamus ultrices sagittis risus, ac dignissim lectus dignissim aliquet.
++36204171469 - 2021.10.23. 11:34:05 (<-)
+        Vivamus ultrices sagittis risus, ac dignissim lectus dignissim aliquet.
++36301133221 - 2021.10.24. 22:22:12 (->)
+        Vivamus sollicitudin neque et augue commodo, eu rhoncus felis fringilla.
+
+No result :(
+
++36305027774 - 2021.10.24. 10:45:11 (<-)
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
++36305027774 - 2021.10.24. 12:45:11 (->)
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+4. feladat
+Number doesn't exists!
+
++36204171469 - 2021.10.25. 12:40:23 (<-)
+        Phasellus ullamcorper libero ac ligula porta, sit amet tempus leo tempus.
++36204171469 - 2021.10.23. 11:34:05 (<-)
+        Vivamus ultrices sagittis risus, ac dignissim lectus dignissim aliquet.
++36204171469 - 2021.10.22. 10:34:05 (->)
+        Vivamus ultrices sagittis risus, ac dignissim lectus dignissim aliquet.
+
+
+5. feladat
++36204171469
++36301133221
++36305027774
++36701236914

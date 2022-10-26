@@ -125,6 +125,36 @@ class EventManagerApp{
 		else
 			eventCollection.remove(deleteNum);
 	}
+	
+
+	
+	public void writeToFile(Event event, String filename)
+	{
+		PrintWriter fileOutput = null;
+		try{
+			//eleje
+			fileOutput = new PrintWriter(
+				new OutputStreamWriter( 
+					new FileOutputStream(filename, true)
+				)
+			);
+			//VÉGE
+			
+			//Kiiratás
+			fileOutput.println(event);
+			
+			fileOutput.flush();
+		}
+		catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			if(fileOutput != null)
+				fileOutput.close();
+		}
+	}	
 
 	
 	public void writeToFile()
@@ -147,16 +177,41 @@ class EventManagerApp{
 	{
 			try
 			{
-				InputStreamReader fileInput = new InputStreamReader(new FileInputStream(filename));
-			}catch(FileNotFoundException e)
-			{
-				e.printStackTrace();
+				List<String> words = new ArrayList<String>();
+				BufferedReader reader = new BufferedReader(new FileReader(filename));
+				String line;
 				
-			}catch(IOException e)
+
+					while ((line = reader.readLine()) != null) 
+					{
+						words.add(line);
+					}
+					/*
+					for(int i = 0; i < words.size(); i+=4)
+					{
+						string correctrow = words.get(i).split(); 
+						for(int i = 0; i < 4; i++)
+						{
+							
+						}
+						
+						
+						Event tempevent = new Event(words.get(i),words.get(i),Integer.parseInt(words.get(i+2)), Integer.parseInt(words.get(i+3)));
+						eventCollection.add(tempevent);
+					}*/
+					reader.close();
+
+			}
+			catch(FileNotFoundException e)
 			{
 				e.printStackTrace();
 				
 			}
+			catch(IOException e) 
+			{
+				e.printStackTrace();
+			}
+
 	}
 
 }

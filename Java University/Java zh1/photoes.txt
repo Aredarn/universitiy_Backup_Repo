@@ -1,0 +1,2 @@
+New photo1,22
+new photo2,10

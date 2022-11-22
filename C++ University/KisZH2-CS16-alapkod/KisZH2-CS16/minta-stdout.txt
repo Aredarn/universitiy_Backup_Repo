@@ -1,0 +1,68 @@
+main() eleje!
+
+
+
+setDistance() teszt
+
+
+
+printAll() teszt
+
+Current city: Veszprem
+  Distance from Budapest : 111
+  Distance from Debrecen : 338
+  Distance from Nyiregyhaza : 341
+  Distance from Pecs : 154
+  Distance from Szekesfehervar : 45
+  Distance from Szolnok : 214
+  Distance from Tatabanya : 102
+  Distance from Zalaegerszeg : 126
+
+
+getDistance() teszt
+
+Distance from Veszprem to Budapest is 111
+ERROR: No stored distance from Veszprem to Kaposvar
+Distance from Veszprem to Nyiregyhaza is 341
+Distance from Veszprem to Szolnok is 214
+ERROR: No stored distance from Veszprem to Miskolc
+Distance from Veszprem to Pecs is 154
+
+
+average() teszt
+
+Average distance: 178.875
+
+
+closerThan() teszt
+
+Close than 200 km:
+Budapest(111)
+Pecs(154)
+Szekesfehervar(45)
+Tatabanya(102)
+Zalaegerszeg(126)
+
+
+sortMany() teszt
+
+Sorted based on distance from Szolnok:
+Budapest(108)
+Debrecen(132)
+Veszprem(214)
+Pecs(228)
+
+
+printByDistance() teszt
+
+Nyiregyhaza
+Debrecen
+Szolnok
+Pecs
+Zalaegerszeg
+Budapest
+Tatabanya
+Szekesfehervar
+
+
+main() vege!

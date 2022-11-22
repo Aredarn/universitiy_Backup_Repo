@@ -26,14 +26,11 @@ int main()
         cout << "1. feladat" << endl << endl;
         map<char,int> hisztogram;
         //// 1. feladat --- MEGIRANDO RESZ ELEJE
-        auto kiirTop = [&hisztogram](int min)
-        {
-            for(auto it : hisztogram)
-            {
-                if(it.second >= min)
-                    cout << it.first;
-            }
-        };// kiirTop lambda ide
+        auto kiirTop = [&](int min_elofordulasszam){ // [&hisztogram]
+            for (auto& p : hisztogram)
+                if (p.second >= min_elofordulasszam)
+                    cout << p.first;
+        };
         //// 1. feladat --- MEGIRANDO RESZ VEGE
         for (char c : getSzoveg1())
             hisztogram[c]++;
@@ -63,10 +60,7 @@ int main()
         };
         vector<string> jelszavak = getJelszavak2();
         //// 2. feladat --- MEGIRANDO RESZ ELEJE
-        ///
-
-        auto elso = find_if(jelszavak.begin(),jelszavak.end(),erosJelszo); // find_if fuggvenyhivas ide
-
+        auto elso = find_if(jelszavak.begin(),jelszavak.end(),erosJelszo);
         //// 2. feladat --- MEGIRANDO RESZ VEGE
         if (elso==jelszavak.end())
             cout << "Nincs eros jelszo!" << endl;
@@ -83,20 +77,11 @@ int main()
         cout << "3. feladat" << endl << endl;
         int also_korlat = 0;
         int felso_korlat = 100;
-
-
-
         //// 3. feladat --- MEGIRANDO RESZ ELEJE
-        ///
-
-        auto normalis = [&also_korlat,&felso_korlat](int meres)
-        {
-            return also_korlat <= meres && felso_korlat >= meres;
+        auto normalis = [&](double meres){ // [&also_korlat,&felso_korlat]
+            return also_korlat<=meres && meres<=felso_korlat;
         };
-        // normalis lambda ide
         //// 3. feladat --- MEGIRANDO RESZ VEGE
-        ///
-        ///
         list<double> mereslista = getMereslista3();
         bool n1 = all_of(mereslista.begin(),mereslista.end(),normalis);
         cout << "1.: " << (n1 ? "mind normalis." : "valamelyik abnormalis!") << endl;
@@ -121,17 +106,11 @@ int main()
     {
         cout << "4. feladat" << endl << endl;
         //// 4. feladat --- MEGIRANDO RESZ ELEJE
-
-
-        auto korabbi = [&](Szemely& w, Szemely& w2)
-        {
-           if(w.getEletkor() < w2.getEletkor()) return true;
-           if(w.getEletkor() > w2.getEletkor()) return false;
+        auto korabbi = [](const Szemely& a, const Szemely& b){
+            if (a.getEletkor() < b.getEletkor()) return true;
+            if (a.getEletkor() > b.getEletkor()) return false;
+            return a.getNev() < b.getNev();
         };
-
-
-
-                // korabbi lambda ide
         //// 4. feladat --- MEGIRANDO RESZ VEGE
         vector<Szemely> szemelyek = getSzemelyek4();
         sort(szemelyek.begin(),szemelyek.end(),korabbi);
@@ -151,69 +130,84 @@ int main()
     // Ilona, 64
     // Karoly, 75
 
-//    {
-//        cout << "5. feladat" << endl << endl;
-//        int arGyerek=1500, arDiak=2100, arFelnott=3000;
-//        list<Szemely> csoport = getCsoport5();
-//        //// 5. feladat --- MEGIRANDO RESZ ELEJE
-//        int vegosszeg = // accumulate fuggvenyhivas ide
-//        //// 5. feladat --- MEGIRANDO RESZ VEGE
-//        cout << "Vegosszeg = " << vegosszeg << endl;
-//        cout << endl;
-//    }
-//    // Vegosszeg = 29700
+    {
+        cout << "5. feladat" << endl << endl;
+        int arGyerek=1500, arDiak=2100, arFelnott=3000;
+        list<Szemely> csoport = getCsoport5();
+        //// 5. feladat --- MEGIRANDO RESZ ELEJE
+        int vegosszeg = accumulate(csoport.begin(),csoport.end(),0,
+                                   [&](int osszeg, const Szemely& tag){
+            if (tag.getEletkor() < 14) return osszeg + arGyerek;
+            if (tag.getEletkor() < 18) return osszeg + arDiak;
+            return osszeg + arFelnott;
+        });
+        //// 5. feladat --- MEGIRANDO RESZ VEGE
+        cout << "Vegosszeg = " << vegosszeg << endl;
+        cout << endl;
+    }
+    // Vegosszeg = 29700
 
-//    {
-//        cout << "6. feladat" << endl << endl;
-//        vector<Szemely> alkalmazottak = getAlkalmazottak6();
-//        vector<bool> szuletesnap = getSzuletesnap6();
-//        //// 6. feladat --- MEGIRANDO RESZ ELEJE
-//        // transform fuggvenyhivas ide
-//        //// 6. feladat --- MEGIRANDO RESZ VEGE
-//        for (auto& a : alkalmazottak)
-//            cout << a.getNev() << ", " << a.getEletkor() << endl;
-//        cout << endl;
-//    }
-//    // Karoly, 76
-//    // Zsombor, 34
-//    // Ilona, 65
-//    // Judit, 26
-//    // Hanna, 18
-//    // Eszter, 26
-//    // Ferenc, 15
-//    // Andras, 25
-//    // Sara, 25
-//    // Magdolna, 34
-//    // Laszlo, 9
+    {
+        cout << "6. feladat" << endl << endl;
+        vector<Szemely> alkalmazottak = getAlkalmazottak6();
+        vector<bool> szuletesnap = getSzuletesnap6();
+        //// 6. feladat --- MEGIRANDO RESZ ELEJE
+        transform(alkalmazottak.begin(),alkalmazottak.end(),szuletesnap.begin(),
+                  alkalmazottak.begin(),[](const Szemely& alkalmazott, bool szuletesnap){
+            Szemely ujertek = alkalmazott;
+            if (szuletesnap)
+                ujertek.setEletkor(ujertek.getEletkor()+1);
+            return ujertek;
+        });
+        //// 6. feladat --- MEGIRANDO RESZ VEGE
+        for (auto& a : alkalmazottak)
+            cout << a.getNev() << ", " << a.getEletkor() << endl;
+        cout << endl;
+    }
+    // Karoly, 76
+    // Zsombor, 34
+    // Ilona, 65
+    // Judit, 26
+    // Hanna, 18
+    // Eszter, 26
+    // Ferenc, 15
+    // Andras, 25
+    // Sara, 25
+    // Magdolna, 34
+    // Laszlo, 9
 
-//    {
-//        cout << "7. feladat" << endl << endl;
-//        map<Szemely,unsigned> varoterem = getVaroterem7();
-//        vector<map<Szemely,unsigned>::iterator> seged;
-//        //// 7. feladat --- MEGIRANDO RESZ ELEJE
-//        // seged vector feltoltese ide
-//        auto kisebbsorszam = // kisebbsorszam lambda ide
-//        //// 7. feladat --- MEGIRANDO RESZ VEGE
-//        sort(seged.begin(),seged.end(),kisebbsorszam);
-//        for (auto& it : seged) // map<Szemely,unsigned>::iterator
-//        {
-//            auto p = *it; // pair<Szemely,unsigned>
-//            cout << "Sorszam=" << p.second << " <- ";
-//            cout << it->first.getNev() << ", " << it->first.getEletkor() << endl;
-//        }
-//        cout << endl;
-//    }
-//    // Sorszam=1001 <- Sara, 25
-//    // Sorszam=1002 <- Magdolna, 34
-//    // Sorszam=1003 <- Laszlo, 9
-//    // Sorszam=1004 <- Hanna, 17
-//    // Sorszam=1005 <- Ferenc, 14
-//    // Sorszam=1006 <- Eszter, 25
-//    // Sorszam=1007 <- Zsombor, 34
-//    // Sorszam=1008 <- Karoly, 75
-//    // Sorszam=1009 <- Ilona, 64
-//    // Sorszam=1010 <- Judit, 25
-//    // Sorszam=1011 <- Andras, 25
+    {
+        cout << "7. feladat" << endl << endl;
+        map<Szemely,unsigned> varoterem = getVaroterem7();
+        vector<map<Szemely,unsigned>::iterator> seged;
+        //// 7. feladat --- MEGIRANDO RESZ ELEJE
+        for (auto it=varoterem.begin();it!=varoterem.end();it++)
+            seged.push_back(it);
+        using ittype = map<Szemely,unsigned>::iterator; // csak rovidites vegett
+        auto kisebbsorszam = [](ittype i1, ittype i2){
+            return i1->second < i2->second;
+        };
+        //// 7. feladat --- MEGIRANDO RESZ VEGE
+        sort(seged.begin(),seged.end(),kisebbsorszam);
+        for (auto& it : seged) // map<Szemely,unsigned>::iterator
+        {
+            auto p = *it; // pair<Szemely,unsigned>
+            cout << "Sorszam=" << p.second << " <- ";
+            cout << it->first.getNev() << ", " << it->first.getEletkor() << endl;
+        }
+        cout << endl;
+    }
+    // Sorszam=1001 <- Sara, 25
+    // Sorszam=1002 <- Magdolna, 34
+    // Sorszam=1003 <- Laszlo, 9
+    // Sorszam=1004 <- Hanna, 17
+    // Sorszam=1005 <- Ferenc, 14
+    // Sorszam=1006 <- Eszter, 25
+    // Sorszam=1007 <- Zsombor, 34
+    // Sorszam=1008 <- Karoly, 75
+    // Sorszam=1009 <- Ilona, 64
+    // Sorszam=1010 <- Judit, 25
+    // Sorszam=1011 <- Andras, 25
 
     cout << "main() vege!" << endl;
     return 0;

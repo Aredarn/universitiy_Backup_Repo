@@ -1,2 +1,4 @@
 New photo1,22
 new photo2,10
+mak,34
+mak2,56

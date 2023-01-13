@@ -1,0 +1,196 @@
+main() eleje!
+
+Adatbazis teszt
+
+Rekordok szama: 13
+Jo munkat!
+
+1/a.-1/c. feladatok - betoltes(), listazSzobak(), listazFoglalasok(0) teszt
+
+Szobak:
+  (1) 0. emelet, 1. ajto, 5 ferohely
+  (2) 0. emelet, 2. ajto, 6 ferohely
+  (11) 1. emelet, 1. ajto, 3 ferohely
+  (12) 1. emelet, 2. ajto, 4 ferohely
+  (13) 1. emelet, 3. ajto, 4 ferohely
+  (14) 1. emelet, 4. ajto, 3 ferohely
+  (21) 2. emelet, 1. ajto, 2 ferohely
+  (22) 2. emelet, 2. ajto, 3 ferohely
+  (23) 2. emelet, 3. ajto, 2 ferohely
+  (24) 2. emelet, 4. ajto, 3 ferohely
+  (25) 2. emelet, 5. ajto, 2 ferohely
+  (31) 3. emelet, 1. ajto, 6 ferohely
+  (32) 3. emelet, 2. ajto, 5 ferohely
+Foglalasok:
+  (1) foglalo: 274324KD, 4 fo, idotartam: 2022-05-12 - 2022-05-16 (4 ejszaka), szoba: 12
+  (2) foglalo: 481989WK, 3 fo, idotartam: 2022-06-05 - 2022-06-06 (1 ejszaka), szoba: 11
+  (3) foglalo: 121431LD, 6 fo, idotartam: 2022-04-25 - 2022-04-30 (5 ejszaka), szoba: 31
+  (4) foglalo: 958434IR, 5 fo, idotartam: 2022-08-05 - 2022-08-07 (2 ejszaka), szoba: 1
+  (5) foglalo: 121431LD, 2 fo, idotartam: 2022-08-06 - 2022-08-10 (4 ejszaka), szoba: 21
+  (6) foglalo: 274324KD, 2 fo, idotartam: 2022-05-12 - 2022-05-20 (8 ejszaka), szoba: 21
+  (7) foglalo: 123515GR, 6 fo, idotartam: 2022-07-11 - 2022-07-15 (4 ejszaka), szoba: 31
+  (8) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 12
+  (9) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 13
+  (10) foglalo: 274324KD, 2 fo, idotartam: 2022-08-08 - 2022-08-11 (3 ejszaka), szoba: 25
+  (11) foglalo: 481989WK, 3 fo, idotartam: 2022-05-15 - 2022-05-17 (2 ejszaka), szoba: 14
+  (12) foglalo: 536346WE, 4 fo, idotartam: 2022-05-16 - 2022-05-21 (5 ejszaka), szoba: 12
+  (13) foglalo: 621267LR, 4 fo, idotartam: 2022-05-14 - 2022-05-18 (4 ejszaka), szoba: 13
+  (14) foglalo: 654254WE, 4 fo, idotartam: 2022-05-16 - 2022-05-19 (2 ejszaka), szoba: 32
+
+1/d. feladat - mindentTorol() teszt
+
+Szobak:
+  (1) 0. emelet, 1. ajto, 5 ferohely
+  (2) 0. emelet, 2. ajto, 6 ferohely
+  (11) 1. emelet, 1. ajto, 3 ferohely
+  (12) 1. emelet, 2. ajto, 4 ferohely
+  (13) 1. emelet, 3. ajto, 4 ferohely
+  (14) 1. emelet, 4. ajto, 3 ferohely
+  (21) 2. emelet, 1. ajto, 2 ferohely
+  (22) 2. emelet, 2. ajto, 3 ferohely
+  (23) 2. emelet, 3. ajto, 2 ferohely
+  (24) 2. emelet, 4. ajto, 3 ferohely
+  (25) 2. emelet, 5. ajto, 2 ferohely
+  (31) 3. emelet, 1. ajto, 6 ferohely
+  (32) 3. emelet, 2. ajto, 5 ferohely
+Foglalasok:
+  (1) foglalo: 274324KD, 4 fo, idotartam: 2022-05-12 - 2022-05-16 (4 ejszaka), szoba: 12
+  (2) foglalo: 481989WK, 3 fo, idotartam: 2022-06-05 - 2022-06-06 (1 ejszaka), szoba: 11
+  (3) foglalo: 121431LD, 6 fo, idotartam: 2022-04-25 - 2022-04-30 (5 ejszaka), szoba: 31
+  (4) foglalo: 958434IR, 5 fo, idotartam: 2022-08-05 - 2022-08-07 (2 ejszaka), szoba: 1
+  (5) foglalo: 121431LD, 2 fo, idotartam: 2022-08-06 - 2022-08-10 (4 ejszaka), szoba: 21
+  (6) foglalo: 274324KD, 2 fo, idotartam: 2022-05-12 - 2022-05-20 (8 ejszaka), szoba: 21
+  (7) foglalo: 123515GR, 6 fo, idotartam: 2022-07-11 - 2022-07-15 (4 ejszaka), szoba: 31
+  (8) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 12
+  (9) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 13
+  (10) foglalo: 274324KD, 2 fo, idotartam: 2022-08-08 - 2022-08-11 (3 ejszaka), szoba: 25
+  (11) foglalo: 481989WK, 3 fo, idotartam: 2022-05-15 - 2022-05-17 (2 ejszaka), szoba: 14
+  (12) foglalo: 536346WE, 4 fo, idotartam: 2022-05-16 - 2022-05-21 (5 ejszaka), szoba: 12
+  (13) foglalo: 621267LR, 4 fo, idotartam: 2022-05-14 - 2022-05-18 (4 ejszaka), szoba: 13
+  (14) foglalo: 654254WE, 4 fo, idotartam: 2022-05-16 - 2022-05-19 (2 ejszaka), szoba: 32
+Szobak:
+Foglalasok:
+
+2. feladat - maxletszam() teszt
+
+Legnagyobb letszamu foglalas: 3 (6)
+
+3. feladat - foglalasokSzama() teszt
+
+Foglalasok szama a(z) 14 szobahoz: 1 db
+Foglalasok szama a(z) 21 szobahoz: 2 db
+Foglalasok szama a(z) 1 szobahoz: 1 db
+Foglalasok szama a(z) 31 szobahoz: 2 db
+Foglalasok szama a(z) 25 szobahoz: 1 db
+
+4. feladat - szobakSzerint() teszt
+
+25: 10
+31: 3 7
+13: 9 13
+32: 14
+12: 1 8 12
+22:
+23:
+14: 11
+11: 2
+24:
+21: 5 6
+1: 4
+2:
+
+5. feladat - szobaFoglaltsag() teszt
+
+Szoba: 12, osszes ejszakak: 13
+Szoba: 24, osszes ejszakak: 0
+Szoba: 11, osszes ejszakak: 1
+Szoba: 13, osszes ejszakak: 8
+Szoba: 23, osszes ejszakak: 0
+Szoba: 14, osszes ejszakak: 2
+Szoba: 31, osszes ejszakak: 9
+Szoba: 25, osszes ejszakak: 3
+Szoba: 32, osszes ejszakak: 2
+Szoba: 21, osszes ejszakak: 12
+Szoba: 22, osszes ejszakak: 0
+Szoba: 2, osszes ejszakak: 0
+Szoba: 1, osszes ejszakak: 2
+
+6. feladat - idorendben() teszt
+
+Foglalasok idorendben:
+  (3) foglalo: 121431LD, 6 fo, idotartam: 2022-04-25 - 2022-04-30 (5 ejszaka), szoba: 31
+  (1) foglalo: 274324KD, 4 fo, idotartam: 2022-05-12 - 2022-05-16 (4 ejszaka), szoba: 12
+  (6) foglalo: 274324KD, 2 fo, idotartam: 2022-05-12 - 2022-05-20 (8 ejszaka), szoba: 21
+  (13) foglalo: 621267LR, 4 fo, idotartam: 2022-05-14 - 2022-05-18 (4 ejszaka), szoba: 13
+  (11) foglalo: 481989WK, 3 fo, idotartam: 2022-05-15 - 2022-05-17 (2 ejszaka), szoba: 14
+  (14) foglalo: 654254WE, 4 fo, idotartam: 2022-05-16 - 2022-05-19 (2 ejszaka), szoba: 32
+  (12) foglalo: 536346WE, 4 fo, idotartam: 2022-05-16 - 2022-05-21 (5 ejszaka), szoba: 12
+  (2) foglalo: 481989WK, 3 fo, idotartam: 2022-06-05 - 2022-06-06 (1 ejszaka), szoba: 11
+  (8) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 12
+  (9) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 13
+  (7) foglalo: 123515GR, 6 fo, idotartam: 2022-07-11 - 2022-07-15 (4 ejszaka), szoba: 31
+  (4) foglalo: 958434IR, 5 fo, idotartam: 2022-08-05 - 2022-08-07 (2 ejszaka), szoba: 1
+  (5) foglalo: 121431LD, 2 fo, idotartam: 2022-08-06 - 2022-08-10 (4 ejszaka), szoba: 21
+  (10) foglalo: 274324KD, 2 fo, idotartam: 2022-08-08 - 2022-08-11 (3 ejszaka), szoba: 25
+
+7. feladat - szabadSzobak() teszt
+
+Szabad 2022-05-11 es 2022-05-15 kozott: 1 2 11 14 22 23 24 25 31 32
+Szabad 2022-04-30 es 2022-06-01 kozott: 1 2 11 22 23 24 25 31
+Szabad 2022-06-02 es 2022-08-12 kozott: 2 14 22 23 24 32
+
+7/a. feladat - szabadSzobak() harmadik parameter teszt
+
+Szabad 2022-05-11 es 2022-05-15 kozott legalabb 4 fore: 1 2 31 32
+Szabad 2022-04-30 es 2022-06-01 kozott legalabb 4 fore: 1 2 31
+Szabad 2022-06-02 es 2022-08-12 kozott legalabb 4 fore: 2 32
+
+8. feladat - ujFoglalas() teszt
+
+Foglalasok:
+  (1) foglalo: 274324KD, 4 fo, idotartam: 2022-05-12 - 2022-05-16 (4 ejszaka), szoba: 12
+  (2) foglalo: 481989WK, 3 fo, idotartam: 2022-06-05 - 2022-06-06 (1 ejszaka), szoba: 11
+  (3) foglalo: 121431LD, 6 fo, idotartam: 2022-04-25 - 2022-04-30 (5 ejszaka), szoba: 31
+  (4) foglalo: 958434IR, 5 fo, idotartam: 2022-08-05 - 2022-08-07 (2 ejszaka), szoba: 1
+  (5) foglalo: 121431LD, 2 fo, idotartam: 2022-08-06 - 2022-08-10 (4 ejszaka), szoba: 21
+  (6) foglalo: 274324KD, 2 fo, idotartam: 2022-05-12 - 2022-05-20 (8 ejszaka), szoba: 21
+  (7) foglalo: 123515GR, 6 fo, idotartam: 2022-07-11 - 2022-07-15 (4 ejszaka), szoba: 31
+  (8) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 12
+  (9) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 13
+  (10) foglalo: 274324KD, 2 fo, idotartam: 2022-08-08 - 2022-08-11 (3 ejszaka), szoba: 25
+  (11) foglalo: 481989WK, 3 fo, idotartam: 2022-05-15 - 2022-05-17 (2 ejszaka), szoba: 14
+  (12) foglalo: 536346WE, 4 fo, idotartam: 2022-05-16 - 2022-05-21 (5 ejszaka), szoba: 12
+  (13) foglalo: 621267LR, 4 fo, idotartam: 2022-05-14 - 2022-05-18 (4 ejszaka), szoba: 13
+  (14) foglalo: 654254WE, 4 fo, idotartam: 2022-05-16 - 2022-05-19 (2 ejszaka), szoba: 32
+  (15) foglalo: 324325FD, 2 fo, idotartam: 2022-09-12 - 2022-09-13 (1 ejszaka), szoba: 23
+  (16) foglalo: 543246LR, 1 fo, idotartam: 2022-09-06 - 2022-09-08 (2 ejszaka), szoba: 25
+  (17) foglalo: 322814WE, 3 fo, idotartam: 2022-09-16 - 2022-09-20 (4 ejszaka), szoba: 11
+  (18) foglalo: 741547RE, 6 fo, idotartam: 2022-09-21 - 2022-09-27 (6 ejszaka), szoba: 2
+
+8. feladat - ujFoglalas() teszt
+
+std::exception:
+Nincs szoba ilyen azonositoval: 33
+Foglalasok:
+  (1) foglalo: 274324KD, 4 fo, idotartam: 2022-05-12 - 2022-05-16 (4 ejszaka), szoba: 12
+  (2) foglalo: 481989WK, 3 fo, idotartam: 2022-06-05 - 2022-06-06 (1 ejszaka), szoba: 11
+  (3) foglalo: 121431LD, 6 fo, idotartam: 2022-04-25 - 2022-04-30 (5 ejszaka), szoba: 31
+  (4) foglalo: 958434IR, 5 fo, idotartam: 2022-08-05 - 2022-08-07 (2 ejszaka), szoba: 1
+  (5) foglalo: 121431LD, 2 fo, idotartam: 2022-08-06 - 2022-08-10 (4 ejszaka), szoba: 21
+  (6) foglalo: 274324KD, 2 fo, idotartam: 2022-05-12 - 2022-05-20 (8 ejszaka), szoba: 21
+  (7) foglalo: 123515GR, 6 fo, idotartam: 2022-07-11 - 2022-07-15 (4 ejszaka), szoba: 31
+  (8) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 12
+  (9) foglalo: 121431LD, 4 fo, idotartam: 2022-07-08 - 2022-07-12 (4 ejszaka), szoba: 13
+  (10) foglalo: 274324KD, 2 fo, idotartam: 2022-08-08 - 2022-08-11 (3 ejszaka), szoba: 25
+  (11) foglalo: 481989WK, 3 fo, idotartam: 2022-05-15 - 2022-05-17 (2 ejszaka), szoba: 14
+  (12) foglalo: 536346WE, 4 fo, idotartam: 2022-05-16 - 2022-05-21 (5 ejszaka), szoba: 12
+  (13) foglalo: 621267LR, 4 fo, idotartam: 2022-05-14 - 2022-05-18 (4 ejszaka), szoba: 13
+  (14) foglalo: 654254WE, 4 fo, idotartam: 2022-05-16 - 2022-05-19 (2 ejszaka), szoba: 32
+  (15) foglalo: 324325FD, 2 fo, idotartam: 2022-09-12 - 2022-09-13 (1 ejszaka), szoba: 23
+  (16) foglalo: 543246LR, 1 fo, idotartam: 2022-09-06 - 2022-09-08 (2 ejszaka), szoba: 25
+  (17) foglalo: 322814WE, 3 fo, idotartam: 2022-09-16 - 2022-09-20 (4 ejszaka), szoba: 11
+  (18) foglalo: 741547RE, 6 fo, idotartam: 2022-09-21 - 2022-09-27 (6 ejszaka), szoba: 2
+  (19) foglalo: 321432DS, 5 fo, idotartam: 2022-10-12 - 2022-10-13 (1 ejszaka), szoba: 1
+  (20) foglalo: 127623RE, 4 fo, idotartam: 2022-10-06 - 2022-10-08 (2 ejszaka), szoba: 13
+
+main() vege!

@@ -1,0 +1,3 @@
+C:/Users/Megyeri/Desktop/Vizsga_Dec20_Nappali/cmake-build-debug/CMakeFiles/Vizsga_Dec20_Nappali.dir
+C:/Users/Megyeri/Desktop/Vizsga_Dec20_Nappali/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Megyeri/Desktop/Vizsga_Dec20_Nappali/cmake-build-debug/CMakeFiles/rebuild_cache.dir
